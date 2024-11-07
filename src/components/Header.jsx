@@ -11,11 +11,11 @@ const Header = ({ currentView, setCurrentView }) => {
           <div className="flex items-center">
             {/* <Recycle className="h-8 w-8 text-green-500 mr-2" /> */}
             <img src="https://i.imgur.com/7k7qYLa.jpeg" alt="Logo" className="h-16"/>
-            <span className="font-bold text-xl text-green-900">VerdeDigital</span>
+            <span className="font-bold text-4xl text-green-900">  VerdeDigital</span>
           </div>
           {currentView !== 'login' && (
             <nav>
-              <Button variant="ghost" onClick={() => setCurrentView('home')}>Inicio</Button>
+              <Button variant="ghost" onClick={() => setCurrentView('home')}></Button>
               {currentView === 'user' && (
                 <Button variant="ghost" onClick={() => setCurrentView('user')}>Dashboard</Button>
               )}
